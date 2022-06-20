@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Chuyển đổi độ F sang độ C</h2>
+<p>Nhập vào độ F</p>
+<input type="number" id="F_temp">
+<br>
+<br>
+<button onclick="changeTemp()">Đổi sang độ C</button>
+<br>
+<br>
+<p id="result">Kết quả: </p>
+
+<script>
+function changeTemp() {
+    let F_temp = document.getElementById("F_temp").value;
+    let C_temp = (F_temp - 32) / 1.8;
+    document.getElementById("result").innerHTML = " Kết quả là: " + C_temp.toFixed(2) + "độ C";
+}
+</script>
+</body>
+</html>

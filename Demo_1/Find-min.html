@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tìm giá trị nhỏ nhất trong 1 mảng</h2>
+
+<script>
+  let arr1 = [0,2,4,6,8,-1]
+  function findMinInArray(arr){
+      let min = arr[0];
+      for (let i = 0; i < arr.length; i++){
+          if ( min > arr[i]){
+              min = arr[i]
+          }
+      }
+      return min
+  }
+  let result = findMinInArray(arr1);
+  console.log(result);
+</script>
+</body>
+</html>
